@@ -1,0 +1,13 @@
+{
+  "appId": "org.company.projecto01",
+  "appName": "Projecto01",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
