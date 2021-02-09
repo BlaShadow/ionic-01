@@ -34,29 +34,35 @@
           flex: 0 1;
         "
       >
-        <input
-          placeholder="Usuario"
-          type="email"
-          style="
-            margin: 5px 0px;
-            width: 90%;
-            height: 30px;
-            border-radius: 3px;
-            border: 1px solid #f0f0f0;
-          "
-        />
+        <app-field-container style="width: 90%; margin: 5px 0px;" name="lock-closed-outline">
+          <input
+            placeholder="Usuario"
+            type="email"
+            [(ngModel)]="username"
+            style="
+              margin: 5px 0px;
+              width: 90%;
+              height: 20px;
+              background-color: transparent;
+              border: 0px;
+            "
+          />
+        </app-field-container>
 
-        <input
-          placeholder="Clave"
-          type="password"
-          style="
-            margin: 5px 0px;
-            width: 90%;
-            height: 30px;
-            border-radius: 3px;
-            border: 1px solid #f0f0f0;
-          "
-        />
+        <app-field-container style="width: 90%; margin: 5px 0px;" name="lock-closed-outline">
+          <input
+            placeholder="Clave"
+            type="password"
+            [(ngModel)]="password"
+            style="
+              margin: 5px 0px;
+              width: 90%;
+              height: 20px;
+              background-color: transparent;
+              border: 0px;
+            "
+          />
+        </app-field-container>
       </div>
       <button
         id="send"
