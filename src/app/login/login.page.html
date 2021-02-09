@@ -1,0 +1,78 @@
+<ion-content>
+  <div id="container" style="
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #303C50;
+  ">
+    <div
+      style="
+        height: 400px;
+        width: 300px;
+        background-color: #ffffff;
+        border-top: 15px solid #626b7a;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        border-radius: 5px;
+      "
+    >
+      <h3 style="font-size: 24px; margin: 24px 0px 0px;">Bienvenido!</h3>
+      <p>Login para continuar</p>
+
+      <div
+        id="fields"
+        style="
+          margin: 20px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 90%;
+          flex: 0 1;
+        "
+      >
+        <input
+          placeholder="Usuario"
+          type="email"
+          style="
+            margin: 5px 0px;
+            width: 90%;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid #f0f0f0;
+          "
+        />
+
+        <input
+          placeholder="Clave"
+          type="password"
+          style="
+            margin: 5px 0px;
+            width: 90%;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid #f0f0f0;
+          "
+        />
+      </div>
+      <button
+        id="send"
+        style="
+          width: 85%;
+          height: 40px;
+          border: 0px;
+          border-radius: 20px;
+          color: white;
+          background-color: #fe3e3f;
+        "
+        (click)="go()" 
+      >
+        LOGIN
+      </button>
+    </div>
+  </div>
+  
+</ion-content>

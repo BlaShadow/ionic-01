@@ -1,0 +1,14 @@
+npx cap init Projecto01 org.company.projecto01
+ionic build
+npx cap add android
+
+ionic capacitor copy android
+cd android
+.\gradlew.bat assembleDebug
+.\gradlew.bat installDebug
+
+
+ionic generate pages tab4
+
+ionic g module components
+ionic g component components/center-text
